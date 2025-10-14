@@ -1,0 +1,179 @@
+/* Base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff9fb;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fce4ec;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e57399;
+}
+
+/* Hero Section */
+.vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.vision-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.vision-text h2 {
+    font-size: 2.2rem;
+    color: #d0608b;
+}
+
+.vision-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.service img {
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.service h3 {
+    color: #d0608b;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #fff0f5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Discover Section */
+.extra-factionalities {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.extra-factionalities img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* Flavor Journey */
+.journey {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.journey-steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.step span {
+    background-color: #f8bbd0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.step h4 {
+    color: #d0608b;
+}
+
+/* Footer */
+footer {
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.footer-left p {
+    font-style: italic;
+    color: #777;
+}
+
+.footer-right p {
+    margin: 3px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
