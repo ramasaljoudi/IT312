@@ -1,390 +1,80 @@
 /* ===== Base ===== */
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background-color: #fff9fb;
-    color: #333;
-  }
-  
-  /* ===== Header ===== */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fde8ef;
-    padding: 15px 40px;
-  }
-  
-  #logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  #logo img {
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
-  }
-  
-  
-  /* ===== Navigation ===== */
-  .navbar {
-    display: flex;
-    gap: 25px;
-  }
-  
-  .navbar a {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    color: #d0608b;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color:#e75480 ;
-    background-color: #fde4ee;
-    padding: 4px 8px;
-    border-radius: 5px;
-  }
-  
-  .navbar a:active {
-    color: #d0608b;
-  }
-
-  /*.navbar a:visited{
-    color: gray;
-  }*/
-  
-  /* ===== Vision ===== */
- 
- 
- .vision {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .vision-text {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .vision-img img {
-    width: 500px;          
-    height: auto;          
-    object-fit: cover;    
-    border-radius: 15px;    
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
-  }
-
-  .vision-text h2 {
-    color: #d0608b;
-    font-size: 2rem;
-  }
-  
-  
-  /* Services */
- 
-  .section-title {
-    font-size: 1.8rem;
-    color: #d0608b;
-    margin-bottom: 30px;
-  }
-  
-  .service-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-  }
-  
-  
-  .service:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service img {
-    width: 100%;
-    height: 140px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .service h3 {
-    color: #d0608b;
-    margin: 10px 0 5px;
-  }
-  
-  .service p {
-    color: #555;
-    font-size: 14px;
-  }
-
-  
-.service-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(240, 160, 180, 0.95);
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 0.3s ease;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .service:hover .service-info {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-
-.service {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .service-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 192, 203, 0.95); 
-    color: #fff;
-    padding: 15px;
-    font-size: 14px;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 0.3s ease;
-    border-radius: 0 0 15px 15px;
-  }
-  
-  .service:hover .service-info {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  
-  /* ===== Reviews ===== */
-  .reviews {
-    background-color: #fff0f5;
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .reviews-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .review {
-    background-color: #fff;
-    border-radius: 12px;
-    width: 250px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .review-icon {
-    font-size: 30px;
-    margin-bottom: 8px;
-    color: #d0608b;
-  }
-  
-
-  /* ===== Reviews Section ===== */
-.reviews {
-    background-color: #fff0f5;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .reviews h2 {
-    color: #d0608b;
-    margin-bottom: 30px;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .reviews-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-  }
-  
-  .review {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-  }
-  
-  .review h4 {
-    color: #d0608b;
-    margin-bottom: 8px;
-  }
-  
-  .review p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  
-  /* ===== Flavor Journey ===== */
- 
- 
-  .journey {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .journey-steps {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  
-   .step {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .step span {
-    background-color: #f8bbd0;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 50%;
-    font-weight: bold;
-  }
-  
-  .step h4 {
-    color: #d0608b;
-  }
-
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 220px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  
-  .step img { 
-    order: 1; 
-    width:160px;
-    height:160px;
-    object-fit:cover; 
-    border-radius:12px; }
-  
- 
-  .step span { 
-    order: 2; 
-    display:inline-block;
-    background:#f8bbd0; 
-    color:#fff;
-    width:34px;
-    height:34px; 
-    line-height:34px; 
-    border-radius:50%; 
-    font-weight:700; 
-    margin-top:6px; }
-   
- 
-  .step h4 { 
-    order: 3; 
-    margin:8px 0 4px; 
-    color:#d0608b; 
-    font-family:"Playfair Display", serif;}
-  
-  .step p { 
-    order: 4; 
-    color:#555; 
-    font-size:14px; 
-    line-height:1.5; }
-  
-  
-  /* ===== Footer ===== */
-  footer {
-    background-color: #fde8ef;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
-    padding: 30px 20px;
-  }
-  
-  .footer-left p {
-    font-style: italic;
-    color: #777;
-  }
-  
-  .socials img {
-    width: 25px;
-    margin-right: 8px;
-    transition: 0.3s;
-  }
-  
-  .socials img:hover {
-    transform: scale(1.1);
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    width: 100%;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #666;
-  }
-
-  .step img {
-    width: 160px;           
-    height: 160px;          
-    border-radius: 15px;    
-    object-fit: cover;     
-    margin-bottom: 10px;    
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
-  }
-  
-  
-  /* ===== Fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #fff9fb;
   color: #333;
 }
 
-/* ===== Titles ===== */
-h1, h2, h3, h4 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0.5px;
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fde8ef;
+  padding: 15px 40px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #d0608b;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #e75480;
+  background-color: #fde4ee;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+/* ===== Vision ===== */
+.vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.vision-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-text h2 {
+  color: #d0608b;
+  font-size: 2rem;
+}
+
+.vision-img img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* ===== Services ===== */
@@ -395,7 +85,7 @@ h1, h2, h3, h4 {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #d0608b;
   margin-bottom: 30px;
   font-family: "Playfair Display", serif;
@@ -409,17 +99,18 @@ h1, h2, h3, h4 {
 }
 
 .service {
+  position: relative;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   width: 220px;
-  padding: 20px 15px;
-  transition: all 0.3s ease;
+  padding: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .service:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 4px 10px rgba(208, 96, 139, 0.15);
+  transform: translateY(-5px);
 }
 
 .service img {
@@ -427,118 +118,194 @@ h1, h2, h3, h4 {
   height: 140px;
   border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 10px;
 }
 
 .service h3 {
   color: #d0608b;
-  margin: 10px 0 8px;
-  position: relative;
-  font-family: "Playfair Display", serif;
-}
-
-
-.service h3::after {
-  content: "";
-  display: block;
-  width: 40%;
-  height: 2px;
-  background-color: #f8bbd0;
-  margin: 6px auto 10px;
-  border-radius: 2px;
+  margin: 10px 0 5px;
 }
 
 .service p {
   color: #555;
   font-size: 14px;
-  line-height: 1.5;
-  font-family: "Lato", sans-serif;
 }
 
-.journey-section {
-    background-color: #fff;
-    text-align: center;
-    padding: 60px 0;
-  }
-  
-  /* Discover part */
-  .discover-part h2 {
-    font-family: "Playfair Display", serif;
-    color: #d0608b;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .discover-part img {
-    width: 80%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
-  }
-  
+/* hover info */
+.service-info {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(240, 160, 180, 0.95);
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
 
-  .flavor-part h2 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 30px;
-  }
-  
-  .steps {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 220px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .step img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-  
-  .step span {
-    display: inline-block;
-    background: #f8bbd0;
-    color: #fff;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    border-radius: 50%;
-    font-weight: 700;
-    margin-top: 6px;
-  }
-  
-  .step h4 {
-    margin: 8px 0 4px;
-    color: #d0608b;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .step p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .ending {
-    font-style: italic;
-    color: #333;
-    margin-top: 25px;
-  }
-  
+.service:hover .service-info {
+  opacity: 1;
+}
+
+/* ===== Reviews ===== */
+.reviews {
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.reviews h2 {
+  color: #d0608b;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+}
+
+.review h4 {
+  color: #d0608b;
+  margin-bottom: 8px;
+}
+
+.review p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===== Discover Flavor Journey ===== */
+.journey-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Discover */
+.discover-part h2 {
+  font-family: "Playfair Display", serif;
+  color: #d0608b;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.discover-part img {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+/* Flavor Journey */
+.flavor-part h2 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 220px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.step span {
+  display: inline-block;
+  background: #f8bbd0;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.step h4 {
+  margin: 8px 0 4px;
+  color: #d0608b;
+  font-family: "Playfair Display", serif;
+}
+
+.step p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ending {
+  font-style: italic;
+  color: #333;
+  margin-top: 25px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #fde8ef;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.footer-left p {
+  font-style: italic;
+  color: #777;
+}
+
+.socials img {
+  width: 25px;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
