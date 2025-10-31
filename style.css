@@ -448,3 +448,42 @@ footer {
 }
 
 
+.order {
+  border: 1px solid #f2ebf3;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 50px;
+  background-color: #ffd2e3;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.header {
+  font-weight: bold;
+  border-bottom: 1px solid #f0eeee;
+}
+
+h2 {
+  margin: 8px 0 4px;
+  color: #d0608b;
+  font-family: "Playfair Display", serif;
+}
+
+.serviceForm{
+  text-align: center;
+}
+
+#buttons{
+  text-align: center;
+ 
+}
+
+.button{
+ margin: 40px ;
+ background-color: #d0608b;
+ color: #d33684;
+}
