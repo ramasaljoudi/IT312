@@ -447,261 +447,33 @@ footer {
   margin-top: 5px;
 }
 
-
-.order {
-  border: 1px solid #f2ebf3;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px 50px;
-  background-color: #ffd2e3;
+.service-box {
+  position: relative; 
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-}
-
-.header {
-  font-weight: bold;
-  border-bottom: 1px solid #f0eeee;
-}
-
-h2 {
-  margin: 8px 0 4px;
-  color: #d0608b;
-  font-family: "Playfair Display", serif;
-}
-
-.serviceForm{
-  text-align: center;
-}
-
-#buttons{
-  text-align: center;
- 
-}
-
-.button{
- margin: 40px ;
- background-color: #d0608b;
- color: #d33684;
-}
-
-
-
-
-/* ===== About Us Scroll Layout ===== */
-.about-section {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.about-section h1 {
-  font-family: "Playfair Display", serif;
-  color: #d0608b;
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-.about-section p {
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
-
-/* Scrollable row */
-.team-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 25px;
-  padding: 20px;
-  justify-content: flex-start;
-  scroll-behavior: smooth;
-}
-
-.team-scroll::-webkit-scrollbar {
-  height: 10px;
-}
-
-.team-scroll::-webkit-scrollbar-thumb {
-  background-color: #f4b1c8;
-  border-radius: 5px;
-}
-
-/* Individual member card */
-.member {
-  flex: 0 0 auto;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 220px;
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.3s ease;
-}
-
-.member:hover {
-  transform: translateY(-5px);
-}
-
-.member img {
-  width: 180px;
-  height: 180px;
-  border-radius: 12px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.member a {
-  display: block;
-  color: #d0608b;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.member a:hover {
-  color: #e75480;
-}
-/* Join Team Form */
-.join-section {
-  background-color: #fff0f5;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-width: 700px;
-  margin: 50px auto;
-  padding: 30px 40px;
-}
-
-.join-section h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #d0608b;
-  margin-bottom: 25px;
-}
-
-.join-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.join-section label {
-  font-weight: 500;
-  color: #333;
-  text-align: left;
-}
-
-.join-section input,
-.join-section textarea {
-  padding: 10px;
-  border: 1px solid #f2b6cc;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  background-color: #fff;
-}
-
-.join-section input:focus,
-.join-section textarea:focus {
-  border-color: #d0608b;
-  outline: none;
-  box-shadow: 0 0 4px rgba(208, 96, 139, 0.3);
-}
-
-.join-section button {
-  background-color: #d0608b;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
+.favorite {
+  position: absolute;
+  top: 2px;   
+  right: 8px; 
   cursor: pointer;
-  transition: all 0.3s ease;
+  user-select: none;
+  z-index: 2; 
 }
 
-.join-section button:hover {
-  background-color: #e75480;
-  transform: translateY(-2px);
+.favorite input {
+  display: none;
 }
 
-/* ===== Staff Profile ===== */
-.profile-section {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.profile-section h1 {
-  font-family: "Playfair Display", serif;
+.favorite span::before {
+  content: "♡";
+  font-size: 32px; 
   color: #d0608b;
-  font-size: 2rem;
-  margin-bottom: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.profile-table {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 2px solid #f4b1c8;
-  background-color: #fff;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+.favorite:hover span::before {
+  transform: scale(1.2);
 }
 
-.profile-table th {
-  background-color: #fde8ef;
-  color: #d0608b;
-  padding: 15px;
-  font-size: 1.1rem;
-}
 
-.profile-table td {
-  border: 1px solid #f4b1c8;
-  padding: 15px;
-  text-align: left;
-  font-size: 15px;
-}
 
-.profile-photo-cell {
-  text-align: center;
-  width: 250px;
-}
-
-.profile-photo-cell img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 3px solid #f4b1c8;
-}
-
-/* lists inside table */
-.profile-table ul {
-  margin: 5px 0;
-  padding-left: 20px;
-}
-
-/* ===== Back Button Style ===== */
-.back-btn-container {
-  text-align: center;
-  margin-top: 25px;
-}
-
-.back-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #d0608b;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-size: 15px;
-}
-
-.back-btn:hover {
-  background-color: #e75480;
-  transform: translateY(-2px);
-}
