@@ -34,9 +34,8 @@
 
     <!-- Delete members form  -->
     <section class="form-section">
+      <h2>Current Team Members</h2>
       <form action="Manage Team Members.html" method="post">
-        <fieldset>
-          <legend>Current Team Members</legend>
           <p>Select members to delete, then press <strong>Delete</strong>.</p>
           <div class="team-list">
             <!-- Split into two columns so there are 3 members on the left and 3 on the right -->
@@ -81,17 +80,14 @@
             </div>
           </div>
           <button type="submit" name="action" value="delete" id="btn-delete">Delete</button>
-        </fieldset>
       </form>
     </section>
 
     <hr style="color:black; width:85%;">
 
     <section class="form-section">
+      <h2>Add a New Staff Member</h2>
       <form action="Manage Team Members.html" method="post" enctype="multipart/form-data">
-        <fieldset>
-          <legend>Add a New Staff Member</legend>
-
           <label for="name">Enter staff name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -116,7 +112,7 @@
 
           <button type="submit" name="action" value="add">Add</button>
 
-        </fieldset>
+        
       </form>
     </section>
 
