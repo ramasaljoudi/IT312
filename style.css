@@ -507,32 +507,28 @@ h1, h2 {
   text-align: center;
 }
 
-#buttons {
-  text-align: center;
-  margin-top: 40px;
+.dashboard-box {
+  display: flex;                
+  justify-content: center;      
+  align-items: center;         
+  gap: 40px;
+  padding: 40px;                
+  width: 70%;                   
+  margin: 60px auto; 
 }
 
-#buttons a {
-  text-decoration: none;
-}
-
-#buttons button {
-  background-color: #d0608b;
-  color: white;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 8px;
+.btn {
+  background-color:#b74e76;      /* white button background */
+  color: #f8f5f6;               /* pink text */
+  
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;        /* remove underline */
+  font-weight: bold;
   font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 10px;
 }
 
-#buttons button:hover {
-  background-color: #f36a95;
-  transform: translateY(-2px);
-}
+
 
 
 .Select-service {
