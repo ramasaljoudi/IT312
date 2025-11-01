@@ -1039,3 +1039,30 @@ input[type="checkbox"] {
   background-color: #e75480;
   transform: translateY(-2px);
 }
+
+/* ===== Breadcrumbs ===== */
+.breadcrumbs {
+  background-color: #ffe6ef; /* وردي فاتح */
+  padding: 12px 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #b74e76;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-top: 1.5px solid #f2b6cc; /* الخط الفاصل */
+}
+
+.breadcrumbs a {
+  color: #b74e76;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  margin: 0 5px;
+}
+
+
