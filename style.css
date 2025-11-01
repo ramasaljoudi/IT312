@@ -621,6 +621,7 @@ textarea:focus {
   flex: 0 0 auto;
   scroll-snap-align: center;
   min-width: 100px;
+  text-align: center;
 }
 
 .Our-service img {
