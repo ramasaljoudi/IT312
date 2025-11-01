@@ -518,17 +518,21 @@ h1, h2 {
 }
 
 .btn {
-  background-color:#b74e76;      /* white button background */
-  color: #f8f5f6;               /* pink text */
+  background-color:#b74e76;      
+  color: #f8f5f6;               
   
   padding: 15px 30px;
   border-radius: 10px;
-  text-decoration: none;        /* remove underline */
+  text-decoration: none;        
   font-weight: bold;
   font-size: 16px;
 }
 
 
+.btn:hover {
+  background-color: #e75480;
+  transform: translateY(-2px);
+}
 
 
 .Select-service {
@@ -1035,4 +1039,3 @@ input[type="checkbox"] {
   background-color: #e75480;
   transform: translateY(-2px);
 }
-
