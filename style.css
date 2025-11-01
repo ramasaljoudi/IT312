@@ -819,7 +819,8 @@ input[type="checkbox"] {
   transition: all 0.3s ease;
   width: 100%;
   max-width: 14em;
-  margin-top: 3.5em;
+  display: block;
+  margin: 3.5em auto 1.5em auto; 
 }
 
 .form-section button:hover {
@@ -827,16 +828,6 @@ input[type="checkbox"] {
   transform: translateY(-2px);
 }
 
-.form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-
-.form-section button {
-  display: block;
-  margin: 3.5em auto 0 auto; 
-}
 
 /* ===== Team List for delete member form ===== */
 .team-list {
