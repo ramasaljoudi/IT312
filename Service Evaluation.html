@@ -22,20 +22,18 @@
     </nav>
   </header>
 
+  <br>
+  <h1>Service Evaluation</h1>
 
-  <hr>
-
-  <!-- Breadcrumb -->
-  <p>HOME -> CUSTOMER’S DASHBOARD -> Service Evaluation</p>
- <hr>
   <!-- Title -->
-  <h2 class="serviceForm">Service Evaluation</h2>
+  <section class="form-section">
+    <h2>Evaluation</h2>
 
   <!-- Form -->
-   <section class="join-section">
+  
   <form action="#" method="post">
 
-    <p class="serviceForm">
+    <div class="Select-service">
       <label for="service">Select Service:</label>
       <select id="service" name="service">
         <option value="Traditional Sweets">Traditional Sweets</option>
@@ -43,26 +41,29 @@
         <option value="Mini Treats">Mini Treats</option>
         <option value="Event Platters">Event Platters</option>
         <option value="Gift Packaging">Gift Packaging</option>
+        <option value="Celebration cakes">Celebration cakes</option>
       </select>
-    </p>
-
-    <p class="serviceForm">
-      <label>Rating:</label><br>
+    </div>
+    
+   <div class="rating">
+      <label>Rating:</label>
       ★ ★ ★ ★ ★
-    </p>
+   </div>
 
-    <p class="serviceForm">
-      <label for="feedback">Feedback:</label><br>
+      
+   
+   
+      <br>
+      <label for="feedback">Feedback:</label>
       <textarea id="feedback" name="feedback" rows="6" cols="40"></textarea>
-    </p>
+  
 
-    <p class="serviceForm">
-      <button type="submit">Submit</button>
-    </p>
+    <button type="submit" name="action" value="add">Add</button>
+
 
   </form>
-</section>
-  <hr>
+  </section>
+
 
   <!-- Footer -->
   <footer>
@@ -87,4 +88,3 @@
 
 </body>
 </html>
-
