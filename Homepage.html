@@ -6,7 +6,7 @@
   <title>Deliora</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="">
   <!-- Header -->
   <header class="main-header">
     <div id="logo">
@@ -17,9 +17,16 @@
       <a href="Homepage.html">Home</a>
       <a href="Services.html">Services</a>
       <a href="aboutUs.html">About us</a>
-      <a href="Deliora Team dashboard.html">Deliora Team dashboard</a>
-      <a href="Customer’s Dashboard.html">Customer's dashboard</a>
+      <a href="Deliora_Team_dashboard.html">Deliora Team dashboard</a>
+      <a href="Customer’s_Dashboard.html">Customer's dashboard</a>
+
+      <button id="theme-toggle" class="theme-btn">
+        <img id="theme-icon" src="images/moon.png" alt="Toggle Theme">
+      </button>
+      
     </nav>
+
+    
   </header>
 
   <!-- Vision Section -->
@@ -33,7 +40,7 @@
       </p>
     </div>
     <div class="vision-img">
-      <img src="images/Vision (2).png" alt="vision-pic">
+      <img src="images/Vision.png" alt="vision-pic">
     </div>
   </section>
 
@@ -42,7 +49,7 @@
     <h2 class="section-title">Our Services</h2>
     <div class="service-container">
       <div class="service">
-        <img src="images/Celebration Cakes.jpg" alt="Celebration Cakes" />
+        <img src="images/CelebrationCakes.jpg" alt="Celebration Cakes">
         <h3>Celebration Cakes</h3>
         <p>Homemade cakes for all occasions.</p>
         <div class="service-info">
@@ -50,7 +57,7 @@
           </div>          
       </div>
       <div class="service">
-        <img src="images/Traditional sweets.jpg" alt="Traditional Sweets" />
+        <img src="images/TraditionalSweets.jpg" alt="Traditional Sweets">
         <h3>Traditional Sweets</h3>
         <p>Classic Middle Eastern treats.</p>
         <div class="service-info">
@@ -58,7 +65,7 @@
           </div>          
       </div>
       <div class="service">
-        <img src="images/Sweet boxes.jpg" alt="Dessert Boxes" />
+        <img src="images/SweetBoxes.jpg" alt="Dessert Boxes">
         <h3>Dessert Boxes</h3>
         <p>Assorted boxes with seasonal offers.</p>
         <div class="service-info">
@@ -144,11 +151,15 @@
     </div>
   </section>
   
-  
+  <button id="backToTop">
+    <img src="images/up_arrow.png" alt="Back to top">
+</button>
+
 
   <!-- Footer -->
   <footer>
     <div class="footer-left">
+      <p id="clock"></p>
       <h3>Deliora</h3>
       <p>"Home Made, Heart Made – Deliora"</p>
     </div>
@@ -166,5 +177,8 @@
       <p>© 2025 Deliora. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="DelioraJS.js"></script>
+
 </body>
 </html>
