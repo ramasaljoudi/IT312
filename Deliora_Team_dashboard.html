@@ -38,57 +38,11 @@
       Services:</h2>
 
     <div class="scroll-container">
-
-      <Section class="service-list">
-
-        <a href="#s1" class="arrow left">❮</a>
-
-        <div class="Our-service" id="s1">
-          <img src="images/Celebration_Cakes.jpg" alt="Celebration Cakes" />
-          <h3>Celebration Cakes</h3>
-          <p>Homemade cakes for all occasions.</p>
-          <p class="price">Price: 250SAR</p>
-        </div>
-
-        <div class="Our-service" id="s2">
-          <img src="images/Traditional_sweets.jpg" alt="Traditional Sweets" />
-          <h3>Traditional Sweets</h3>
-          <p>Classic Middle Eastern treats.</p>
-          <p class="price">Price: 70SAR</p>
-        </div>
-
-        <div class="Our-service" id="s3">
-          <img src="images/Dessert_boxes.jpg" alt="Dessert Boxes" />
-          <h3>Dessert Boxes</h3>
-          <p>Assorted boxes with seasonal offers.</p>
-          <p class="price">Price: 80SAR</p>
-        </div>
-
-        <div class="Our-service" id="s4">
-          <img src="images/Sweet_boxes.jpg" alt="Mini Treats" />
-          <h3>Mini Treats (Bites & Cupcakes)</h3>
-          <p>Perfect bite-sized desserts like cupcakes, brownies, and mini tarts.</p>
-          <p class="price">Price: 50SAR</p>
-        </div>
-
-        <div class="Our-service" id="s5">
-          <img src="images/Platter.jpg" alt="Event Platters" />
-          <h3>Event Platters</h3>
-          <p>Large trays of assorted homemade desserts.</p>
-          <p class="price">Price: 300SAR</p>
-        </div>
-
-        <div class="Our-service" id="s6">
-          <img src="images/Gift_packaging.jpg" alt="Gift Packaging" />
-          <h3>Gift Packaging</h3>
-          <p>Custom-wrapped dessert boxes with elegant packaging for gifting.</p>
-          <p class="price">Price: 100SAR</p>
-        </div>
-
-        <a href="#s6" class="arrow right">❯</a>
-      </Section>
-
-
+      <a href="#" class="arrow left" id="service-prev">❮</a>
+      <section class="service-list" id="provider-services">
+        <!-- dynamic service cards will be inserted here by DelioraJS.js -->
+      </section>
+      <a href="#" class="arrow right" id="service-next">❯</a>
     </div>
 
 
@@ -126,6 +80,9 @@
       <p>© 2025 Deliora. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Include shared JavaScript for loading provider services from localStorage -->
+  <script src="DelioraJS.js"></script>
 </body>
 
 </html>
