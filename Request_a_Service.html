@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
+  <meta charset="UTF-8">
   <title>Request a Service</title>
-  <link rel="stylesheet" href="style.css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-     <!-- Header -->
-  <header class="main-header">
+<!-- Header -->
+<header class="main-header">
     <div id="logo">
-      <img src="images/Logo2.png" alt="Deliora logo" >
+      <img src="images/Logo2.png" alt="Deliora logo">
     </div>
 
      <nav class="navbar">
@@ -20,46 +21,53 @@
       <a href="Deliora_Team_dashboard.html">Deliora Team dashboard</a>
       <a href="Customer’s_Dashboard.html">Customer's dashboard</a>
     </nav>
-  </header>
+</header>
 
- 
-<!-- ===== Breadcrumbs ===== -->
+<!-- Breadcrumb -->
 <div class="breadcrumbs">
-    <a href="Homepage.html">Home</a> <span style="font-size: 25px;">›</span> <a href="Customer’s_Dashboard.html">Customer Dashboard</a> <span style="font-size: 25px;">›</span> <span>Request a Service</span>
+    <a href="Homepage.html">Home</a> <span style="font-size: 25px;">›</span> 
+    <a href="Customer’s_Dashboard.html">Customer Dashboard</a> <span style="font-size: 25px;">›</span> 
+    <span>Request a Service</span>
 </div>
-<br>
+
 <h1>Request a Service</h1>
-  <section class="form-section">
-    <h2>Request</h2>
-    <form action="Request_a_Service.html" method="post">
-      <label for="name">Customer Name:</label>
-      <input type="text" id="name" name="name">
 
-      
-    <div class="Select-service">
-        <label for="service">Select Service:</label>
-        <select id="service" name="service">
-          <option value="Traditional Sweets">Traditional Sweets</option>
-          <option value="Dessert Boxes">Dessert Boxes</option>
-          <option value="Mini Treats">Mini Treats</option>
-          <option value="Event Platters">Event Platters</option>
-          <option value="Gift Packaging">Gift Packaging</option>
-          <option value="Celebration cakes">Celebration cakes</option>
-        </select>
-      </div>
-      
+<section class="form-section">
+  <h2>Request</h2>
 
-      <label for="date">Due Date:</label>
-      <input type="date" id="date" name="date">
+  <!-- Form WITHOUT action or method -->
+  <form id="requestForm">
 
-      <label for="description">Description:</label>
-      <textarea id="description" name="description" rows="6" cols="40"></textarea>
+    <label for="name">Customer Name:</label>
+    <input type="text" id="name">
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <label for="service">Select Service:</label>
+    <select id="service">
+        <option value="">-- Select Service --</option>
+        <option value="Traditional Sweets">Traditional Sweets</option>
+        <option value="Dessert Boxes">Dessert Boxes</option>
+        <option value="Mini Treats">Mini Treats</option>
+        <option value="Event Platters">Event Platters</option>
+        <option value="Gift Packaging">Gift Packaging</option>
+        <option value="Celebration cakes">Celebration cakes</option>
+    </select>
 
-  <footer>
+    <label for="date">Due Date:</label>
+    <input type="date" id="date">
+
+    <label for="description">Description:</label>
+    <textarea id="description" rows="6"></textarea>
+
+    <!-- IMPORTANT: use JS function -->
+    <button type="button" onclick="submitRequest()">Submit</button>
+
+  </form>
+</section>
+
+<!-- Here requests will show if user chooses Stay -->
+<section id="requestsContainer"></section>
+
+<footer>
     <div class="footer-left">
       <h3>Deliora</h3>
       <p>"Home Made, Heart Made – Deliora"</p>
@@ -77,9 +85,10 @@
     <div class="footer-bottom">
       <p>© 2025 Deliora. All rights reserved.</p>
     </div>
-  </footer>
+</footer>
+
+<!-- CONNECT JAVASCRIPT FILE -->
+<script src="DelioraJS.js"></script>
 
 </body>
 </html>
-
-
