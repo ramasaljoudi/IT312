@@ -370,3 +370,160 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 /* ======================================= end of MANAGE TEAM MEMBERS page=======================================*/
+
+/* =======================================
+   shatha
+======================================= */
+
+function submitRequest() {
+
+    let name = document.getElementById("name").value.trim();
+    let service = document.getElementById("service").value;
+    let date = document.getElementById("date").value;
+    let description = document.getElementById("description").value.trim();
+
+    // 1) Service
+    if (service === "") {
+        alert("Please select a service.");
+        return;
+    }
+
+    // 2) Name (full name + no numbers + no symbols)
+    let namePattern = /^[A-Za-z\s]+$/;
+    if (name === "" || !namePattern.test(name) || name.split(" ").length < 2) {
+        alert("Please enter a valid full name without numbers or symbols.");
+        return;
+    }
+
+    // 3) Due date must not be too soon (3 days rule)
+    let today = new Date();
+    let selectedDate = new Date(date);
+
+    let minDate = new Date();
+    minDate.setDate(today.getDate() + 3);
+
+    if (date === "" || selectedDate < minDate) {
+        alert("The due date is too soon. Please select a later date.");
+        return;
+    }
+
+    // 4) Description ≥ 100 chars
+    if (description.length < 100) {
+        alert("Description must be at least 100 characters.");
+        return;
+    }
+
+    // Confirmation alert (Stay / Leave)
+    let stay = confirm("Your request has been sent.\nPress OK to stay on this page.\nPress Cancel to return to the dashboard.");
+
+    if (!stay) {
+        window.location.href = "Customer’s_Dashboard.html";
+        return;
+    }
+
+    // Show the request inside the page
+    let container = document.getElementById("requestsContainer");
+
+    let box = document.createElement("div");
+    box.className = "request-box";
+
+    box.innerHTML = `
+        <h3>New Request Added</h3>
+        <p><strong>Service:</strong> ${service}</p>
+        <p><strong>Customer:</strong> ${name}</p>
+        <p><strong>Due Date:</strong> ${date}</p>
+        <p><strong>Description:</strong> ${description}</p>
+        <hr>
+    `;
+
+    container.appendChild(box);
+
+    // Clear form
+    document.getElementById("requestForm").reset();
+}
+
+/* =======================================
+   SERVICE EVALUATION — BY SHATHA
+======================================= */
+/* =======================================
+   SERVICE EVALUATION — SHATHA
+======================================= */
+function submitEvaluation() {
+
+    let service = document.getElementById("service").value;
+    let feedback = document.getElementById("feedback").value.trim();
+    let rating = document.getElementById("ratingValue").value;
+
+    // 1) Check service
+    if (service === "") {
+        alert("Please select a service.");
+        return;
+    }
+
+    // 2) Check rating
+    if (rating === "" || rating === "0") {
+        alert("Please select a rating.");
+        return;
+    }
+
+    // 3) Check feedback
+    if (feedback === "") {
+        alert("Please enter your feedback.");
+        return;
+    }
+
+    // Show message
+    if (parseInt(rating) >= 4) {
+        alert("Thank you for your great rating! We appreciate your feedback ❤️");
+    } else {
+        alert("We apologize for not meeting your expectations. Thank you for your feedback 💔");
+    }
+
+    // Redirect
+    window.location.href = "Customer’s_Dashboard.html";
+}
+
+
+
+/* =======================================
+   STAR RATING — INTERACTIVE
+======================================= */
+
+const stars = document.querySelectorAll(".rating-stars span");
+let ratingInput = document.getElementById("ratingValue");
+
+if (stars.length > 0) {
+
+    // Hover effect
+    stars.forEach(star => {
+        star.addEventListener("mouseover", function () {
+            let value = this.dataset.value;
+            highlightStars(value);
+        });
+
+        // Remove color when mouse leaves
+        star.addEventListener("mouseout", function () {
+            let value = ratingInput.value;
+            highlightStars(value);
+        });
+
+        // Click to select rating
+        star.addEventListener("click", function () {
+            let value = this.dataset.value;
+            ratingInput.value = value;
+            highlightStars(value);
+        });
+    });
+}
+
+// Function to highlight stars
+function highlightStars(value) {
+    stars.forEach(star => {
+        if (parseInt(star.dataset.value) <= value) {
+            star.classList.add("active");
+        } else {
+            star.classList.remove("active");
+        }
+    });
+}
+
