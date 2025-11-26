@@ -1388,3 +1388,42 @@ body.dark-mode .Our-service:hover {
 body.dark-mode .decor-image,body.dark-mode .action-card {
   filter: brightness(0.8);
 }
+
+
+.rating-stars {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.rating-stars span {
+    padding: 5px;
+    transition: color 0.2s ease;
+}
+
+.rating-stars span.active {
+    color: gold;
+}
+
+.rating-stars span:hover {
+    color: gold;
+}
+
+/* Force gold in dark mode */
+body.dark-mode .rating-stars span.active {
+    color: gold !important;
+}
+
+/* Dark Mode — Darker Orders */
+body.dark-mode .order {
+    background-color: #b3637f !important;
+    border-color: #d48ca3 !important;
+}
+
+/* Dark Mode – Darker Form Background */
+body.dark-mode .form-section {
+    background-color: #6d475f !important;
+    border-color: #6b5a63 !important;
+}
+
