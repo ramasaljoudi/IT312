@@ -38,7 +38,8 @@
 
   <!-- Form -->
   
-  <form action="Service_Evaluation.html" method="post">
+  <form id="evaluationForm">
+
 
     <div class="Select-service">
       <label for="service">Select Service:</label>
@@ -52,10 +53,16 @@
       </select>
     </div>
     
-   <div class="rating">
-      <label>Rating:</label>
-      ★ ★ ★ ★ ★
-   </div>
+   <div class="rating-stars">
+  <span data-value="1">★</span>
+  <span data-value="2">★</span>
+  <span data-value="3">★</span>
+  <span data-value="4">★</span>
+  <span data-value="5">★</span>
+</div>
+
+<input type="hidden" id="ratingValue">
+
 
       
    
@@ -65,7 +72,8 @@
       <textarea id="feedback" name="feedback" rows="6" cols="40"></textarea>
   
 
-    <button type="submit" name="action" value="submit">Submit</button>
+    <button type="button" onclick="submitEvaluation()">Submit</button>
+
 
 
   </form>
@@ -93,6 +101,7 @@
     </div>
   </footer>
 
+  <script src="DelioraJS.js"></script>
 </body>
 </html>
 
