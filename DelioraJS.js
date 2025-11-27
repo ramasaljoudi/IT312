@@ -1,3 +1,6 @@
+
+
+
 /* =======================================
    LOAD SAVED THEME ON ALL PAGES
 ======================================= */
@@ -527,3 +530,55 @@ function highlightStars(value) {
     });
 }
 
+
+//-----------About Us --------
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const joinForm = document.querySelector(".form-section form");
+
+    if (!joinForm) return; // 
+
+    joinForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Stop automatic submission
+
+        const name = document.getElementById("name").value.trim();
+        const photo = document.getElementById("photo").files[0];
+        const dob = document.getElementById("dob").value;
+        const email = document.getElementById("email").value.trim();
+        const expertise = document.getElementById("expertise").value.trim();
+        const skills = document.getElementById("skills").value.trim();
+        const education = document.getElementById("education").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+       
+        if (!name || !photo || !dob || !email || !expertise || !skills || !education || !message) {
+            alert("Please fill in all the fields before submitting.");
+            return;
+        }
+
+        if (/^\d/.test(name)) {
+            alert("The name cannot start with a number.");
+            return;
+        }
+
+        if (!photo.type.startsWith("image/")) {
+            alert("Only image files are allowed for the photo.");
+            return;
+        }
+
+        const selectedDate = new Date(dob);
+        const limitDate = new Date("2008-12-31");
+
+        if (selectedDate > limitDate) {
+            alert("Date of Birth must not be after the year 2008.");
+            return;
+        }
+
+        alert(`Thank you ${name}! Your request to join the team has been submitted successfully `);
+
+        joinForm.reset(); // Clear form 
+    });
+
+})
