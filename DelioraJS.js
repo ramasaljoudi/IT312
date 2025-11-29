@@ -436,7 +436,7 @@ function submitRequest() {
         <p><strong>Customer:</strong> ${name}</p>
         <p><strong>Due Date:</strong> ${date}</p>
         <p><strong>Description:</strong> ${description}</p>
-        <hr>
+        
     `;
 
     container.appendChild(box);
@@ -582,3 +582,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 })
+
