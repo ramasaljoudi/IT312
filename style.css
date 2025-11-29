@@ -1597,3 +1597,35 @@ body.dark-mode .member {
 body.dark-mode .member a {
   color: #ffb6c1;
 }
+
+/* Request Box Style */
+.request-box {
+    background-color: #ffd2e3;
+    padding: 20px;
+    margin: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 16px;
+}
+
+/* For dark mode – better contrast */
+body.dark-mode .request-box {
+    background-color: #5a3d4c !important;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+    color: #f5f5f5;
+}
+
+.request-box h3 {
+    margin-top: 0;
+    color: #d8608c;
+    font-size: 22px;
+}
+
+body.dark-mode .request-box h3 {
+    color: #ff99c1 !important;
+}
+
+.request-box p {
+    margin: 6px 0;
+}
+
