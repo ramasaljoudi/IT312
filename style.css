@@ -1327,6 +1327,7 @@ body.dark-mode label {
   color: #f0f0f0 !important;
 }
 
+body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
@@ -1373,6 +1374,13 @@ body.dark-mode #btn-delete:hover,
 body.dark-mode .form-section button:hover {
   background-color: #e75480 !important;
 }
+
+
+.action :hover {
+  box-shadow: 0 0 20px rgba(255, 182, 213, 0.4);  
+  transform: translateY(-5px); 
+}
+
 /* Dark mode for scrollable service cards */
 body.dark-mode .Our-service {
   background-color: #2e2e33 !important;
@@ -1552,27 +1560,27 @@ body.dark-mode .form-section {
 /* dark mode for about us page*/
 /* Profile section */
 body.dark-mode .profile-section {
-  background-color: #1e1e1e;
+  background-color: #36363d;
   color: #ffffff;
 }
 
 /* Profile table */
 body.dark-mode .profile-table {
-  background-color: #1e1e1e;
+  background-color: #2e2e33;
   color: white;
   border-color: #444;
 }
 
 /* Table headers */
 body.dark-mode .profile-table th {
-  background-color: #2c2c2c;
+  background-color: #282828;
   color: white;
   border: 1px solid #555;
 }
 
 /* Table cells */
 body.dark-mode .profile-table td {
-  background-color: #1e1e1e;
+  background-color: #2e2e33;
   color: white;
   border: 1px solid #555;
 }
@@ -1584,13 +1592,24 @@ body.dark-mode .profile-table a {
 
 /* Back button */
 body.dark-mode .back-btn {
-  background-color: #444;
+  
   color: white;
   border: 1px solid #888;
 }
 
+.member:hover {
+  box-shadow: 0 0 20px rgba(255, 182, 213, 0.4);  
+  transform: translateY(-5px); 
+}
+
+
+.member img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
 body.dark-mode .member {
-  background-color: #1e1e1e;
+  background-color: #2e2e33;
   color: white;
 }
 
@@ -1628,4 +1647,3 @@ body.dark-mode .request-box h3 {
 .request-box p {
     margin: 6px 0;
 }
-
